@@ -1,0 +1,36 @@
+@(title: String, roles: List[models.entity.Role])
+
+@layouts.main(title) {
+    <h3>@title</h3>
+    <a class="button" href="routes.Role.add.path">Add role</a>
+    <table width="100%">
+        <thead>
+            <tr>
+                <th>
+                    #
+                </th>
+                <th>
+                    Title
+                </th>
+                <th>
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    User
+                </td>
+                <td>
+                    <a href="#">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+}

@@ -1,0 +1,46 @@
+@(title: String, formSigunp: Form[entity.User])
+
+@layouts.main(title) {
+    <h3>@title</h3>
+    @helper.form(action = routes.Auth.postSignup, 'id -> "form_signup", 'method -> "POST") {
+        <div class="row">
+            <div class="small-3 columns">
+                <label for="firstName" class="right inline">First name</label>
+            </div>
+            <div class="small-9 columns">
+                <input id="firstName" type="text" class="" name="firstName">
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-3 columns">
+                <label for="last_name" class="right inline">Last name</label>
+            </div>
+            <div class="small-9 columns">
+                <input id="last_name" type="text" class="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-3 columns">
+                <label for="email" class="right inline">Email address</label>
+            </div>
+            <div class="small-9 columns">
+                <input id="email" type="email" class="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-3 columns">
+                <label for="password" class="right inline">Password</label>
+            </div>
+            <div class="small-9 columns">
+                <input id="password" type="password" class="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-3 columns">
+            </div>
+            <div class="small-9 columns">
+                <button type="submit">Signup</button>
+            </div>
+        </div>
+    }
+}

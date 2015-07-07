@@ -1,0 +1,24 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                          controllers.Ping.index()
+
+# Employee
+GET     /employee                  controllers.Employee.index()
+GET     /employee/add              controllers.Employee.add()
+POST    /employee                  controllers.Employee.store()
+
+# Role
+GET     /roles                     controllers.Role.index()
+GET     /roles/add                 controllers.Role.add()
+
+# User
+GET     /auth/signin                    controllers.Auth.signin()
+POST    /auth/signin                    controllers.Auth.postSignin()
+GET     /auth/signup                    controllers.Auth.signup()
+POST    /auth/signup                    controllers.Auth.postSignup()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

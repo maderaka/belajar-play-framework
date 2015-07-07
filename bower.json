@@ -1,0 +1,9 @@
+{
+  "name": "Play employee assets",
+  "version": "1.0.0",
+  "description": "Play employee assets management",
+  "license": "MIT",
+  "dependencies": {
+    "foundation": "~5.5.2"
+  }
+}

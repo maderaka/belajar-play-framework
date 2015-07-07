@@ -1,0 +1,19 @@
+@(title: String)
+
+@layouts.main(title) {
+    <form action="/employee" method="POST">
+        <div class="row">
+            <div class="small-3 columns">
+                <label for="first_name" class="right inline">First name</label>
+            </div>
+            <div class="small-9 columns">
+                <input id="first_name" type="text" placeholder="Put your first name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-3 columns">
+                <button type="submit" value="Submit">Submit</button>
+            </div>
+        </div>
+    </form>
+}
